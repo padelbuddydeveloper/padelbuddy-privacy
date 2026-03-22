@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PadelBuddy – Tietosuojaseloste</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px 16px 64px;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+        h1 { font-size: 1.8rem; margin-bottom: 4px; }
+        h2 { font-size: 1.15rem; margin-top: 36px; border-bottom: 1px solid #e0e0e0; padding-bottom: 4px; }
+        .updated { color: #666; font-size: 0.9rem; margin-bottom: 32px; }
+        table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.92rem; }
+        th { background: #f5f5f5; text-align: left; padding: 8px 12px; border: 1px solid #ddd; }
+        td { padding: 8px 12px; border: 1px solid #ddd; vertical-align: top; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        a { color: #1976d2; }
+        .highlight { background: #e8f5e9; border-left: 4px solid #4caf50; padding: 12px 16px; border-radius: 4px; margin: 16px 0; }
+        footer { margin-top: 48px; font-size: 0.85rem; color: #888; }
+    </style>
+</head>
+<body>
+
+<h1>PadelBuddy – Tietosuojaseloste</h1>
+<p class="updated">Voimassa alkaen: 22.3.2026</p>
+
+<p>Tämä tietosuojaseloste kuvaa, mitä henkilötietoja PadelBuddy-sovellus kerää, miten niitä käytetään ja miten voit hallita omia tietojasi. Sovellus on tarkoitettu yli 15-vuotiaille.</p>
+
+<h2>1. Rekisterinpitäjä</h2>
+<p>
+    PadelBuddy-sovelluksen kehittäjä<br>
+    Yhteydenotto: <a href="mailto:padelbuddy.developer@gmail.com">padelbuddy.developer@gmail.com</a>
+</p>
+
+<h2>2. Kerättävät tiedot</h2>
+
+<table>
+    <tr>
+        <th>Tietotyyppi</th>
+        <th>Mitä kerätään</th>
+        <th>Tarkoitus</th>
+    </tr>
+    <tr>
+        <td><strong>Tunnistautumistiedot</strong></td>
+        <td>Google-tilin sähköpostiosoite ja käyttäjätunnus (UID)</td>
+        <td>Kirjautuminen ja käyttäjätilin hallinta</td>
+    </tr>
+    <tr>
+        <td><strong>Nimimerkki</strong></td>
+        <td>Käyttäjän itse valitsema nimimerkki</td>
+        <td>Näytetään muille pelaajille</td>
+    </tr>
+    <tr>
+        <td><strong>Sijaintitieto</strong></td>
+        <td>GPS-sijainti (leveys- ja pituusaste), haettu kaupunki ja hakusäde</td>
+        <td>Lähellä olevien pelaajien etsiminen</td>
+    </tr>
+    <tr>
+        <td><strong>Peliajat</strong></td>
+        <td>Käyttäjän asettamat vapaat peliajat (päivä, kellonaika)</td>
+        <td>Yhteisen peliajan löytäminen muiden kanssa</td>
+    </tr>
+    <tr>
+        <td><strong>Pelitaso</strong></td>
+        <td>Padelution-pisteet tai oma arvio tasosta</td>
+        <td>Tasoltaan sopivien pelaajien ehdottaminen</td>
+    </tr>
+    <tr>
+        <td><strong>Viestit</strong></td>
+        <td>Ryhmächat-viestit (teksti, lähettäjä, aikaleima)</td>
+        <td>Peliryhmän sisäinen viestintä</td>
+    </tr>
+    <tr>
+        <td><strong>Matsi- ja ryhmätiedot</strong></td>
+        <td>Peliryhmän kokoonpano, peliajat, hyväksymistilat</td>
+        <td>Peliryhmän muodostaminen ja koordinointi</td>
+    </tr>
+    <tr>
+        <td><strong>Ilmoitustunnus (FCM)</strong></td>
+        <td>Laitteen push-ilmoitusavain</td>
+        <td>Pelikutsujen ja viestien lähettäminen</td>
+    </tr>
+</table>
+
+<h2>3. Tietojen käyttötarkoitukset</h2>
+<ul>
+    <li>Lähellä olevien, tasoltaan sopivien padelpelaajien löytäminen</li>
+    <li>Peliryhmien muodostaminen ja ajanvarauksen helpottaminen</li>
+    <li>Ryhmäsisäinen viestintä pelipaikasta sopimiseksi</li>
+    <li>Push-ilmoitusten lähettäminen pelikutsuista ja -vahvistuksista</li>
+</ul>
+
+<h2>4. Tietojen säilytys ja suojaus</h2>
+<p>Tiedot tallennetaan <strong>Google Firebase Firestore</strong> -pilvipalveluun, joka sijaitsee Googlen EU-alueen palvelinkeskuksissa. Kaikki tiedonsiirto on salattu TLS-protokollalla. Firebase salaa tallennetun datan AES-256-algoritmilla.</p>
+<p>Sijaintitieto päivittyy sovellusta käytettäessä ja näkyy muille käyttäjille vain niin kauan kuin käyttäjä on merkinnyt itsensä näkyväksi. Peliajat poistetaan automaattisesti matsin vahvistuttua.</p>
+
+<h2>5. Tietojen jakaminen</h2>
+<div class="highlight">
+    <strong>Tietoja ei myydä eikä luovuteta kolmansille osapuolille.</strong>
+</div>
+<p>Nimimerkki ja pelitaso näkyvät muille sovelluksen käyttäjille pelaajaehdotusten yhteydessä. Sovellus käyttää seuraavia kolmannen osapuolen palveluita ainoastaan toiminnan mahdollistamiseksi:</p>
+<ul>
+    <li><strong>Google Firebase</strong> – tietojen tallennus, tunnistautuminen ja push-ilmoitukset</li>
+    <li><strong>Padelution.com</strong> – pelaajan julkisen profiilin hakeminen (pelkästään lukeminen, ei kirjoitusta)</li>
+    <li><strong>Playtomic / Cintoia</strong> – kenttävuorojen saatavuuden tarkistaminen reaaliajassa (tietoja ei tallenneta)</li>
+</ul>
+
+<h2>6. Käyttäjän oikeudet (GDPR)</h2>
+<p>EU:n tietosuoja-asetuksen (GDPR) mukaisesti sinulla on oikeus:</p>
+<ul>
+    <li><strong>Tarkastaa</strong> omat tietosi</li>
+    <li><strong>Oikaista</strong> virheelliset tiedot</li>
+    <li><strong>Poistaa</strong> tietosi – tilin poisto poistaa kaikki Firestoreen tallennetut tiedot</li>
+    <li><strong>Rajoittaa</strong> tietojen käsittelyä</li>
+    <li><strong>Vastustaa</strong> käsittelyä</li>
+    <li><strong>Siirtää</strong> tiedot toiseen palveluun</li>
+</ul>
+<p>Tilin ja kaikkien tietojen poisto onnistuu suoraan sovelluksesta: <em>Profiili → Poista tili</em>. Voit myös lähettää tietopyyntöjä osoitteeseen <a href="mailto:padelbuddy.developer@gmail.com">padelbuddy.developer@gmail.com</a>.</p>
+
+<h2>7. Ikäraja</h2>
+<p>Sovellus on tarkoitettu yli 15-vuotiaille. Emme tietoisesti kerää alle 16-vuotiaiden tietoja. Jos epäilet että alaikäinen on rekisteröitynyt, ota yhteyttä sähköpostilla.</p>
+
+<h2>8. Muutokset tietosuojaselosteeseen</h2>
+<p>Mahdollisista muutoksista ilmoitetaan päivittämällä tämän sivun päivämäärä. Merkittävistä muutoksista ilmoitetaan sovelluksessa.</p>
+
+<h2>9. Yhteydenotto</h2>
+<p>
+    Tietosuojaan liittyvissä kysymyksissä:<br>
+    <a href="mailto:padelbuddy.developer@gmail.com">padelbuddy.developer@gmail.com</a>
+</p>
+
+<footer>
+    PadelBuddy &copy; 2026 &nbsp;|&nbsp; Viimeksi päivitetty 22.3.2026
+</footer>
+
+</body>
+</html>
