@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PadelBuddy – Tilin poistaminen</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 24px 16px 64px;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+        h1 { font-size: 1.8rem; margin-bottom: 4px; }
+        h2 { font-size: 1.15rem; margin-top: 36px; border-bottom: 1px solid #e0e0e0; padding-bottom: 4px; }
+        .updated { color: #666; font-size: 0.9rem; margin-bottom: 32px; }
+        .box {
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin: 24px 0;
+            background: #f9fbe7;
+        }
+        .box-title {
+            font-weight: bold;
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+            color: #2e7d32;
+        }
+        ol { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.92rem; }
+        th { background: #f5f5f5; text-align: left; padding: 8px 12px; border: 1px solid #ddd; }
+        td { padding: 8px 12px; border: 1px solid #ddd; vertical-align: top; }
+        .warn {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 12px 16px;
+            border-radius: 4px;
+            margin: 16px 0;
+            font-size: 0.95rem;
+        }
+        a { color: #1976d2; }
+        footer { margin-top: 48px; font-size: 0.85rem; color: #888; }
+        code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<h1>PadelBuddy – Tilin poistaminen</h1>
+<p class="updated">Päivitetty: 22.3.2026</p>
+
+<p>Tällä sivulla kerrotaan, miten voit poistaa PadelBuddy-tilisi ja siihen liittyvät tiedot.</p>
+
+<h2>Poista tili suoraan sovelluksesta</h2>
+
+<div class="box">
+    <div class="box-title">Tilin poisto sovelluksessa:</div>
+    <ol>
+        <li>Avaa <strong>PadelBuddy</strong></li>
+        <li>Napauta <strong>Profiili</strong> (alavalikko oikealla)</li>
+        <li>Vieritä alas ja napauta <strong>Poista tili</strong></li>
+        <li>Vahvista poisto</li>
+    </ol>
+    <p style="margin-bottom:0;">Tili ja kaikki tiedot poistetaan välittömästi.</p>
+</div>
+
+<h2>Poistopyyntö sähköpostilla</h2>
+
+<p>Jos sinulla ei ole enää pääsyä sovellukseen, lähetä poistopyyntö osoitteeseen:<br>
+<a href="mailto:padelbuddy.developer@gmail.com">padelbuddy.developer@gmail.com</a></p>
+
+<p>Kirjoita viestiin otsikko <code>Tilin poistopyyntö</code> ja mainitse Google-tilisi sähköpostiosoite.
+Pyyntöön vastataan ja tili poistetaan 30 päivän kuluessa.</p>
+
+<h2>Mitä tietoja poistetaan</h2>
+
+<table>
+    <tr>
+        <th>Tieto</th>
+        <th>Poistetaan</th>
+        <th>Huomio</th>
+    </tr>
+    <tr>
+        <td>Käyttäjäprofiili (nimimerkki, pelitaso)</td>
+        <td>✅ Välittömästi</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Sijaintitieto</td>
+        <td>✅ Välittömästi</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Peliajat ja hakuasetukset</td>
+        <td>✅ Välittömästi</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Push-ilmoitustunnus (FCM)</td>
+        <td>✅ Välittömästi</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Ryhmächat-viestit</td>
+        <td>✅ Välittömästi</td>
+        <td>Poistetaan omalta osalta; muiden lähettämät viestit voivat jäädä ryhmän historiaan</td>
+    </tr>
+    <tr>
+        <td>Kirjautumistiedot (Google-tili)</td>
+        <td>✅ Välittömästi</td>
+        <td>Firebase Authentication -tunnus poistetaan</td>
+    </tr>
+    <tr>
+        <td>Padelution-pisteet</td>
+        <td>✅ Välittömästi</td>
+        <td>Alkuperäiset tiedot padelution.com-palvelussa säilyvät (erillinen palvelu)</td>
+    </tr>
+</table>
+
+<div class="warn">
+    <strong>Huom:</strong> Tilin poisto on peruuttamaton toimenpide. Tietoja ei voi palauttaa poistamisen jälkeen.
+</div>
+
+<h2>Yhteydenotto</h2>
+<p>
+    Tietosuojaan tai tilin poistoon liittyvissä kysymyksissä:<br>
+    <a href="mailto:padelbuddy.developer@gmail.com">padelbuddy.developer@gmail.com</a>
+</p>
+
+<p><a href="privacy-policy.html">← Tietosuojaseloste</a></p>
+
+<footer>
+    PadelBuddy &copy; 2026 &nbsp;|&nbsp; Päivitetty 22.3.2026
+</footer>
+
+</body>
+</html>
